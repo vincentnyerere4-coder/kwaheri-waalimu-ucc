@@ -14,11 +14,10 @@ body{font-family:system-ui;background:radial-gradient(circle at top,#1e293b,#020
 .reg{font-size:11px;color:#16a34a;font-weight:700;background:#f0fdf4;border:1px dashed #22c55e;padding:5px 10px;border-radius:20px;width:fit-content;margin:0 auto 10px}
 .header h1{font-size:20px}.header p{font-size:12px;color:#475569;margin-top:8px;line-height:1.6}
 .subject{background:#fff;border-radius:20px;padding:18px;margin-bottom:14px;box-shadow:0 10px 30px rgba(0,0,0,.2)}
-.sub-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.sub-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;flex-wrap:wrap;gap:6px}
 .sub-head b{font-size:14px}.sub-head span{background:#f1f5f9;padding:4px 8px;border-radius:10px;font-size:10px}
 .subject textarea,.subject input{width:100%;padding:11px;border:2px solid #e2e8f0;border-radius:12px;margin-bottom:8px;font-size:12px;outline:none}
-.subject textarea:focus,.subject input:focus{border-color:#0f172a}
-.btn-sub{width:100%;background:#0f172a;color:#fff;border:none;padding:11px;border-radius:12px;font-weight:700;cursor:pointer;font-size:12px}
+.btn-sub{width:100%;background:#0f172a;color:#fff;border:none;padding:12px;border-radius:12px;font-weight:700;cursor:pointer;font-size:12px}
 .btn-sub.green{background:linear-gradient(135deg,#0f172a,#16a34a)}
 .success{display:none;background:#dcfce7;color:#166534;padding:10px;border-radius:10px;font-size:11px;text-align:center;margin-top:8px;font-weight:600}
 .footer{text-align:center;color:#94a3b8;font-size:10px;margin-top:16px;line-height:1.6}
@@ -30,45 +29,45 @@ body{font-family:system-ui;background:radial-gradient(circle at top,#1e293b,#020
 <div class="badge">VINCENT NYERERE MAILE</div>
 <div class="reg">Reg No: 01-032026-02-99936</div>
 <h1>🎓 Maoni ya Waalimu Wangu</h1>
-<p>Mwalimu, Tafadhali chagua somo lako na unipe maoni yako kama mwanafunzi wako. Maoni yako yatanisaidia sana katika safari yangu ya <b>Degree - CBE Dar</b></p>
+<p>Mwalimu, chagua somo lako na unipe maoni yako kuhusu mimi. Maoni yako yatanisaidia sana Degree - CBE Dar</p>
 </div>
 
 <div class="subject">
 <div class="sub-head"><b>💻 Programming</b><span>Mwalimu wa Programming</span></div>
-<input type="text" id="name1" placeholder="Jina la Mwalimu">
+<input type="text" id="name1" placeholder="Jina la Mwalimu wa Programming">
 <textarea id="maoni1" rows="3" placeholder="Mwalimu, andika maoni yako kuhusu Vincent Nyerere Maile..."></textarea>
 <button class="btn-sub green" onclick="sendMaoni('Programming','name1','maoni1','msg1')">TUMA MAONI YA PROGRAMMING 🚀</button>
 <div id="msg1" class="success"></div>
 </div>
 
 <div class="subject">
-<div class="sub-head"><b>🏗️ Computer Architecture</b><span>Mwalimu wa Architecture</span></div>
-<input type="text" id="name2" placeholder="Jina la Mwalimu">
-<textarea id="maoni2" rows="3" placeholder="Maoni yako kuhusu Vincent kwenye Architecture..."></textarea>
+<div class="sub-head"><b>🏗️ Computer Architecture</b><span>Architecture</span></div>
+<input type="text" id="name2" placeholder="Jina la Mwalimu wa Architecture">
+<textarea id="maoni2" rows="3" placeholder="Maoni yako kuhusu Vincent..."></textarea>
 <button class="btn-sub" onclick="sendMaoni('Architecture','name2','maoni2','msg2')">TUMA MAONI YA ARCHITECTURE 🚀</button>
 <div id="msg2" class="success"></div>
 </div>
 
 <div class="subject">
-<div class="sub-head"><b>📡 Networking</b><span>Mwalimu wa Networking</span></div>
-<input type="text" id="name3" placeholder="Jina la Mwalimu">
-<textarea id="maoni3" rows="3" placeholder="Maoni yako kuhusu Vincent kwenye Networking..."></textarea>
+<div class="sub-head"><b>📡 Networking</b><span>Networking</span></div>
+<input type="text" id="name3" placeholder="Jina la Mwalimu wa Networking">
+<textarea id="maoni3" rows="3" placeholder="Maoni yako kuhusu Vincent..."></textarea>
 <button class="btn-sub green" onclick="sendMaoni('Networking','name3','maoni3','msg3')">TUMA MAONI YA NETWORKING 🚀</button>
 <div id="msg3" class="success"></div>
 </div>
 
 <div class="subject">
-<div class="sub-head"><b>📊 Applied Mathematics</b><span>Mwalimu wa Maths</span></div>
-<input type="text" id="name4" placeholder="Jina la Mwalimu">
-<textarea id="maoni4" rows="3" placeholder="Maoni yako kuhusu Vincent kwenye Applied Maths..."></textarea>
+<div class="sub-head"><b>📊 Applied Mathematics</b><span>Maths</span></div>
+<input type="text" id="name4" placeholder="Jina la Mwalimu wa Maths">
+<textarea id="maoni4" rows="3" placeholder="Maoni yako kuhusu Vincent..."></textarea>
 <button class="btn-sub" onclick="sendMaoni('Applied Mathematics','name4','maoni4','msg4')">TUMA MAONI YA MATHS 🚀</button>
 <div id="msg4" class="success"></div>
 </div>
 
 <div class="subject">
-<div class="sub-head"><b>💼 Business Communication</b><span>Mwalimu wa BC</span></div>
-<input type="text" id="name5" placeholder="Jina la Mwalimu">
-<textarea id="maoni5" rows="3" placeholder="Maoni yako kuhusu Vincent kwenye Business Communication..."></textarea>
+<div class="sub-head"><b>💼 Business Communication</b><span>BC</span></div>
+<input type="text" id="name5" placeholder="Jina la Mwalimu wa BC">
+<textarea id="maoni5" rows="3" placeholder="Maoni yako kuhusu Vincent..."></textarea>
 <button class="btn-sub green" onclick="sendMaoni('Business Communication','name5','maoni5','msg5')">TUMA MAONI YA BC 🚀</button>
 <div id="msg5" class="success"></div>
 </div>
@@ -82,11 +81,11 @@ async function sendMaoni(somo,nameId,maoniId,msgId){
 const mwalimu=document.getElementById(nameId).value;
 const maoni=document.getElementById(maoniId).value;
 const msgBox=document.getElementById(msgId);
-if(!mwalimu||!maoni){alert("Tafadhali jaza jina la mwalimu na maoni");return;}
+if(!mwalimu||!maoni){alert("Jaza jina na maoni");return;}
 msgBox.style.display='block';msgBox.innerText='⏳ Inatuma...';
-await fetch("https://formsubmit.co/ajax/"+EMAIL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({Somo:somo,JinaLaMwalimu:mwalimu,Maoni:maoni,Mwanafunzi:"Vincent Nyerere Maile",RegNo:"01-032026-02-99936"})});
-window.open("https://wa.me/"+WA+"?text="+encodeURIComponent("MAONI YA MWALIMU - "+somo+"\n\nMwanafunzi: Vincent Nyerere Maile\nReg No: 01-032026-02-99936\nMwalimu: "+mwalimu+"\nSomo: "+somo+"\nMaoni: "+maoni),'_blank');
-msgBox.innerText="✅ Asante Mwalimu "+mwalimu+"! Maoni yako ya "+somo+" yametumwa kwa Vincent";
+await fetch("https://formsubmit.co/ajax/"+EMAIL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({Somo:somo,Mwalimu:mwalimu,Maoni:maoni,Mwanafunzi:"Vincent Nyerere Maile",RegNo:"01-032026-02-99936"})});
+window.open("https://wa.me/"+WA+"?text="+encodeURIComponent("MAONI - "+somo+"\nMwanafunzi: Vincent Nyerere Maile\nReg: 01-032026-02-99936\nMwalimu: "+mwalimu+"\nMaoni: "+maoni),'_blank');
+msgBox.innerText="✅ Asante Mwalimu "+mwalimu+"! Maoni ya "+somo+" yametumwa";
 document.getElementById(nameId).value="";document.getElementById(maoniId).value="";
 }
 </script>
