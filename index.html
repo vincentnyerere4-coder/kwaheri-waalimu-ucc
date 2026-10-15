@@ -1,54 +1,52 @@
-
 <!DOCTYPE html>
-<html lang="sw">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kwaheri Waalimu - Vincent Nyerere Maile</title>
+<title>Farewell - Vincent Nyerere Maile</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:system-ui;background:#020617;padding:16px}
+body{font-family:system-ui;background:#0a1020;padding:16px}
 .container{max-width:700px;margin:0 auto}
 .header{background:#fff;border-radius:20px;padding:20px;text-align:center;margin-bottom:14px}
 .badge{background:#0f172a;color:#22c55e;padding:5px 12px;border-radius:20px;font-size:11px;font-weight:800;width:fit-content;margin:0 auto 5px}
 .reg{background:#f0fdf4;border:1px dashed #22c55e;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:700;color:#16a34a;width:fit-content;margin:0 auto 8px}
+.header h3{font-size:18px;margin-top:8px}
+.header p{font-size:11px;color:#16a34a;margin-top:6px;font-weight:600}
 .subject{background:#fff;border-radius:18px;padding:16px;margin-bottom:12px}
-.subject b{font-size:13px}
+.subject b{font-size:14px}
 .subject input,.subject textarea{width:100%;padding:11px;border:2px solid #e2e8f0;border-radius:10px;margin-top:8px;font-size:12px}
 .btn{width:100%;background:#0f172a;color:#fff;border:none;padding:12px;border-radius:10px;font-weight:700;margin-top:8px;cursor:pointer}
 .success{display:none;background:#dcfce7;color:#166534;padding:10px;border-radius:8px;font-size:11px;margin-top:8px;text-align:center;font-weight:600}
+.footer{text-align:center;color:#94a3b8;font-size:10px;margin-top:16px}
+.footer b{color:#e2e8f0}
 </style>
 </head>
 <body>
 <div class="container">
 <div class="header">
 <div class="badge">VINCENT NYERERE MAILE</div>
-<div class="reg">01-032026-02-99936</div>
-<h3>🎓 Kwaherini Waalimu Wangu</h3>
-<p style="font-size:11px;color:#475569;margin-top:6px">Maoni yanatumwa kwa Email tu - Salama 100%</p>
+<div class="reg">01-032026-02-99936 | UCC DSM → CBE Degree</div>
+<h3>🎓 Farewell My Teachers</h3>
+<p>UCC DSM → CBE Degree Dar | Comments are sent by Email only - 100% Secure</p>
 </div>
-
-<div class="subject"><b>💻 Programming</b><input id="n1" placeholder="Jina la Mwalimu"><textarea id="m1" rows="3" placeholder="Maoni yako..."></textarea><button class="btn" onclick="send('Programming','n1','m1','o1')">TUMA EMAIL 📧</button><div id="o1" class="success"></div></div>
-
-<div class="subject"><b>🏗️ Architecture</b><input id="n2" placeholder="Jina la Mwalimu"><textarea id="m2" rows="3" placeholder="Maoni yako..."></textarea><button class="btn" onclick="send('Architecture','n2','m2','o2')">TUMA EMAIL 📧</button><div id="o2" class="success"></div></div>
-
-<div class="subject"><b>📡 Networking</b><input id="n3" placeholder="Jina la Mwalimu"><textarea id="m3" rows="3" placeholder="Maoni yako..."></textarea><button class="btn" onclick="send('Networking','n3','m3','o3')">TUMA EMAIL 📧</button><div id="o3" class="success"></div></div>
-
-<div class="subject"><b>📊 Applied Maths</b><input id="n4" placeholder="Jina la Mwalimu"><textarea id="m4" rows="3" placeholder="Maoni yako..."></textarea><button class="btn" onclick="send('Applied Maths','n4','m4','o4')">TUMA EMAIL 📧</button><div id="o4" class="success"></div></div>
-
-<div class="subject"><b>💼 Business Comm.</b><input id="n5" placeholder="Jina la Mwalimu"><textarea id="m5" rows="3" placeholder="Maoni yako..."></textarea><button class="btn" onclick="send('Business Comm.','n5','m5','o5')">TUMA EMAIL 📧</button><div id="o5" class="success"></div></div>
-
+<div class="subject"><b>💻 Programming</b><input id="n1" placeholder="Teacher's Name"><textarea id="m1" rows="3" placeholder="Your opinion..."></textarea><button class="btn" onclick="send('Programming','n1','m1','o1')">SEND EMAIL 📧</button><div id="o1" class="success"></div></div>
+<div class="subject"><b>🏗️ Computer Architecture</b><input id="n2" placeholder="Teacher's Name"><textarea id="m2" rows="3" placeholder="Your opinion..."></textarea><button class="btn" onclick="send('Architecture','n2','m2','o2')">SEND EMAIL 📧</button><div id="o2" class="success"></div></div>
+<div class="subject"><b>📡 Networking</b><input id="n3" placeholder="Teacher's Name"><textarea id="m3" rows="3" placeholder="Your opinion..."></textarea><button class="btn" onclick="send('Networking','n3','m3','o3')">SEND EMAIL 📧</button><div id="o3" class="success"></div></div>
+<div class="subject"><b>📊 Applied Mathematics</b><input id="n4" placeholder="Teacher's Name"><textarea id="m4" rows="3" placeholder="Your opinion..."></textarea><button class="btn" onclick="send('Applied Maths','n4','m4','o4')">SEND EMAIL 📧</button><div id="o4" class="success"></div></div>
+<div class="subject"><b>💼 Business Communication</b><input id="n5" placeholder="Teacher's Name"><textarea id="m5" rows="3" placeholder="Your opinion..."></textarea><button class="btn" onclick="send('Business Comm.','n5','m5','o5')">SEND EMAIL 📧</button><div id="o5" class="success"></div></div>
+<div class="footer"><b>Prepared by Vincent Nyerere Maile</b><br>01-032026-02-99936 | UCC DSM → CBE Degree Dar es Salaam</div>
 </div>
 <script>
 const EMAIL="vincentnyerere4@gmail.com";
 async function send(somo,nId,mId,oId){
-const jina=document.getElementById(nId).value;
-const maoni=document.getElementById(mId).value;
+const jina=document.getElementById(nId).value.trim();
+const maoni=document.getElementById(mId).value.trim();
 const box=document.getElementById(oId);
-if(!jina||!maoni){alert("Jaza jina na maoni");return;}
-box.style.display="block";box.innerText="⏳ Inatuma...";
-await fetch("https://formsubmit.co/ajax/"+EMAIL,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({Somo:somo,Mwalimu:jina,Maoni:maoni,Reg:"01-032026-02-99936"})});
-box.innerText="✅ Asante Mwalimu "+jina+" - Maoni ya "+somo+" yametumwa kwa Email";
+if(!jina||!maoni){alert("Please fill name and comment");return;}
+box.style.display="block";box.innerText="⏳ Sending...";
+await fetch("https://formsubmit.co/ajax/"+EMAIL,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({Subject:somo,Teacher:jina,Comment:maoni,Reg:"01-032026-02-99936",From:"UCC DSM to CBE Degree"})});
+box.innerText="✅ Thanks Teacher "+jina+" - Comment sent";
 document.getElementById(nId).value="";document.getElementById(mId).value="";
 }
 </script>
